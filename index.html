@@ -166,11 +166,33 @@
          text-transform: uppercase;
       }
 
+      section.home_icon_box {
+         background: #b6104e;
+      }
+      .home_icon_box p {
+         color: #fff !important;
+         font-family: "Montserrat";
+         font-size: 15px;
+         margin-bottom: 0;
+         font-weight: 500;
+      }
+      .home_icon_box p span {
+         color: #ffd92a;
+         font-family: "Montserrat";
+         font-size: 15px;
+         margin-bottom: 0;
+         font-weight: 600;
+         line-height: 0;
+      }
+      .home_icon_box .col-lg-2 {
+         padding: 10px;
+      }
+
 
       /* program offered */
 
       .programme-offered {
-         padding: 70px 0;
+         padding: 70px 0 140px 0;
       }
 
       .programme-offered h3 {
@@ -1546,12 +1568,17 @@
          .accordion_two_section {
             padding-top: 0px;
          }
-         .eligiblity img {
-            margin-bottom: -21px;
-         }
       }
 
       @media (max-width: 768px) {
+         .eligiblity-image img{
+            position: relative !important;
+            bottom: -20px !important;
+         }
+         .home_icon_box p{
+            text-align: center;
+            margin: 20px;
+         }
          .intro h4 {
             font-size: 20px !important;
          }
@@ -1599,12 +1626,8 @@
 
          .text_box {
             margin-top: 20px;
+            margin-bottom: 40px;
          }
-
-         .eligiblity {
-            padding: 12px 0 !important;
-         }
-
          .country_code_blk {
             margin-bottom: 1rem;
          }
@@ -1714,12 +1737,11 @@
          #mobile_blk img {
             display: block !important;
          }
-         .eligiblity img {
-            margin-bottom: -21px;
-         }
+         
       }
 
       @media (min-width: 768px) {
+         
          #mobile_blk {
             display: block !important;
          }
@@ -2008,12 +2030,15 @@
          z-index: 1;
          }*/
       .eligiblity {
-         padding: 0;
          background-color: #fdf8f9;
       }
 
-      .eligiblity img {
-         /* border-radius: 10px; */
+      .eligiblity-image{
+         position: relative;
+      }
+      .eligiblity-image img{
+         position: absolute;
+         bottom: -185px;
          width: 100%;
       }
 
@@ -2353,70 +2378,40 @@
                </div>
             </div>
          </div>
+      </div>
+   </section>
 
-
-         <style>
-            .counts{
-               padding: 0 130px 30px 0;
-            }
-            .counts p{
-               font-size: 1.2rem;
-               color: #656565;
-            }
-            .counts span{
-               font-size: 1.4rem;
-               font-weight: 600;
-               color: rgb(22, 22, 22);
-            }
-            .counts .col-md-2{
-               border-right: 1px solid gray;
-               text-align: center;
-            }
-            @media (max-width:768px){
-               .counts{
-                  padding: 0;
-               }
-               .counts .col-md-2{
-                  border: none;
-               }
-               .counts span{
-                  font-size: 1.2rem;
-               }
-               .counts p{
-                  font-size: .9rem;
-               }
-            }
-         </style>
-
-         <div class="row counts">
-            <div class="col-md-2">
+   <section class="home_icon_box">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 col-lg-2">
                <p>
                   <span>800+</span> 
                   <br> 
                   Ph.D. Faculty
                </p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-6 col-lg-2">
                <p>
                   <span>200+</span> 
                   <br> 
                   Companies Visit
                </p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-6 col-lg-2">
                <p>
                   <span>20250+</span> 
                   <br> 
                   Students
                </p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-6 col-lg-2">
                <p>
                   <span>17.55 LPA</span> 
                   <br> 
                   Highest CTC</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-6 col-lg-2">
                <p>
                   <span>20000</span> 
                   <br> 
@@ -2424,7 +2419,6 @@
                </p>
             </div>
          </div>
-
       </div>
    </section>
    <!--       <section class="menu-section" id="navbar">
@@ -2615,10 +2609,11 @@
       </div>
    </section>
 
+
    <section class="eligiblity" id="eligiblity">
       <div class="container">
          <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 eligiblity-image">
                <img src="img/mba-banner.png">
             </div>
             <div class="col-lg-6 text_box">
